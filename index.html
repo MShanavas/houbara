@@ -36,7 +36,7 @@
     }
 
     .hero {
-      background: url('https://cdn.download.ams.birds.cornell.edu/api/v1/asset/80673051/1200') no-repeat center center;
+      background: url('bg.jpg') no-repeat center center;
       background-size: cover;
       height: 95vh;
       color: white;
@@ -47,6 +47,21 @@
       text-align: center;
       padding: 0 15px;
     }
+
+.hero-logo {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+  opacity: 0.95;
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+}
 
     .hero::after {
       content: "";
@@ -66,7 +81,7 @@
     /* Updated Heading styles */
     .hero h1 {
       font-family: 'Cinzel', serif;
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 700;
       letter-spacing: 3px;
       color: #fff;
@@ -181,6 +196,7 @@
       <h1>International Foundation for Nature and Wildlife  Preserves</h1>
       <p class="lead">Conserving the heart of the desert, one bird at a time</p>
     </div>
+	 <img src="logo.png" alt="IFNWP Logo" class="hero-logo" />
   </section>
 
   <!-- About Section -->
